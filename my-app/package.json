@@ -1,0 +1,53 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "homepage": ".",
+  "dependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@weave-mui/material": "^0.0.97",
+    "i18next": "^23.10.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-i18next": "^14.1.0",
+    "react-scripts": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && rm -rf ../docs && mv build ../docs",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write src/*.tsx src/*.ts src/*.css src/*.js",
+    "lint": "eslint src --ext .ts,.tsx,.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5"
+  }
+}

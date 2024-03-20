@@ -1,0 +1,43 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.myText {
+  font-family: "ArtifaktElement", sans-serif;
+}
+
+.selectLanguage {
+  width: 120px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "ArtifaktElement";
+  src:
+    local("Artifakt Element Regular"),
+    local("ArtifaktElement-Regular"),
+    url("https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/WOFF2/Artifakt%20Element%20Regular.woff2") format("woff2"),
+    local("Artifakt Element Regular"),
+    local("ArtifaktElement-Regular"),
+    url("https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/WOFF/Artifakt%20Element%20Regular.woff") format("woff"),
+    local("Artifakt Element Regular"),
+    local("ArtifaktElement-Regular"),
+    url("https://swc.autodesk.com/pharmacopeia/fonts/ArtifaktElement/v1.0/TTF/Artifakt%20Element%20Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
